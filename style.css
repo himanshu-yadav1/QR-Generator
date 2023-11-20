@@ -19,6 +19,11 @@ html, body{
     margin: 0px auto;
     border-radius: 15px;
     padding-bottom: 13px;
+    height: 280px;
+    transition: height 0.3s ease;
+}
+.card.active{
+    height: 690px;
 }
 
 .heading{
@@ -70,11 +75,16 @@ html, body{
     border-radius: 10px;
     position: relative;
     left: 3%;
+    opacity: 0;
     border: 1px solid gray;
-    display: none;
 }
 
 .qr-code img{
     width: 80%;
     padding: 15px 0;
+}
+
+.card.active .qr-code{
+    opacity: 1;
+    transition: opacity 0.7s 0.05s ease;
 }
